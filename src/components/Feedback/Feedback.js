@@ -23,8 +23,7 @@ export default class Feedback extends Component {
 
   updateState = name => {
     this.setState(prevState => ({
-      ...prevState,
-      ...{ [name]: prevState[name] + 1 },
+      [name]: prevState[name] + 1,
     }));
   };
 
